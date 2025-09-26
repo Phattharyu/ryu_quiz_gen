@@ -1,10 +1,9 @@
-import dotenv from 'dotenv'
+import {APIPORT,USERDB,DBNAME,DBPASS,DBPORT} from "./config/config.js";
 import express from 'express'
 import router from './routes/router.js'
-
-dotenv.config() // Save a secret in .env file
+ 
 const app = express()
-const port = process.env.APIPORT || 3000
+const port = APIPORT
 
 app.use(express.json())
 app.use(router)

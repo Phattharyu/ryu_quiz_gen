@@ -5,4 +5,3 @@ const router = express.Router()
 userRouter(router)
 
 export default router;
-

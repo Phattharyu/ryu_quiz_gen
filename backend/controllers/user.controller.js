@@ -1,5 +1,7 @@
+import userService from "../services/user.service.js";
+
 const userController = {
-    registerUser: async (res,req) => {
+    registerUser: async (req,res) => {
         try {
             const {username,department,emailAddress, password} = req.body;
             const newUser = await userService.registerUser(username,department,emailAddress,password);
