@@ -1,7 +1,11 @@
+import Header from "./components/Header";
+import FileUpload from "./components/fileUpload";
+
 function App() {
   return (
     <>
-      Hello world!!!
+      <Header title="Welcome to Quiz Generator!!!"/>
+      <FileUpload/>
     </>
   )
 }
